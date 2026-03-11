@@ -15,6 +15,40 @@ For Firmware changes or changes involving some form of hardware, include the fol
 -->
 Closes # ... by ...
 
+### Review Level
+
+<!--
+Pick the tier that reflects the risk of this change. When in doubt, go one level up.
+
+A high-risk change includes but is not limited to: 
+- Changes that could break or alter existing user-facing behavior
+- Changes that touch authentication, authorization, or permissions logic
+- Changes that modify a shared API contract (added/removed/renamed fields, altered response shape)
+- Changes that modify a shared utility, hook, context, or component used across the app
+- Changes that require a paired backend, firmware, or infrastructure change to be deployed together
+-->
+
+- [ ] **Lightweight** - Isolated, low-risk change (copy/label edit, style tweak, documentation, single config value). 
+No shared logic touched. Reviewer spot-check is enough.
+- [ ] **Standard** - Typical bug fix or feature. Touches business logic or UI components but introduces no breaking 
+changes. Full review expected.
+- [ ] **Deep-dive** - High-risk change. Describe why this change is high-risk:
+  
+
+### AI assistance
+
+<!--
+Disclose how much code in this PR was AI-generated.
+This helps reviewers calibrate how closely to read the logic.
+
+As the PR Author, you must independently verify correctness, edge cases, and security implications before requesting a 
+review. Do not request a review on unverified AI-generated code. 
+-->
+
+- [ ] **None**: All code written by the author without AI assistance
+- [ ] **Partial**: Some code or logic was AI-generated. 
+- [ ] **Majority**: Most of the implementation was AI-generated.
+
 ## Test plan
 
 <!--
