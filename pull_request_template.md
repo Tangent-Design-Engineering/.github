@@ -1,17 +1,11 @@
 ## Summary
-
 <!--
 What changed and why. Lead with closing keywords, a one-sentence overview, then add detail.
 - Bug fix: describe the symptom, the root cause, and the fix.
 - Feature: describe the new behavior and why it was added.
-- Multi-issue PR: use a sub-bullet per issue, e.g.:
-  - ** Closes #202** — Fixed date format on invoices
-  - ** Closes #203** — Removed trailing comma from totals row
 
-For Firmware changes or changes involving some form of hardware, include the following details:
-- **Breaking change for existing devices:** Yes / No
-- **Target hardware:**  STM32F4, ESP32-S3, nRF52840, etc. 
-- **Target hardware version:**  1.3.1
+If the PR is associated to a requirement or specification, list which 
+requirements / specifications this pr is related to.
 -->
 Closes # ... by ...
 
@@ -52,11 +46,19 @@ review. Do not request a review on unverified AI-generated code.
 ## Test plan
 
 <!--
-List the steps a reviewer should take to verify this works.
-Be specific: include role (admin vs. non-admin), device, OS, or firmware target where relevant.
+Document all coverage for this PR:
+1) Unit tests created/updated for this change (include file/test names and status).
+2) What testing you (the PR author) have already completed.
+3) What a reviewer should run to verify and test edge cases.
+
+Unit tests that cover this change should be included in this PR and should be passing before merge.
+
+For each test, make it clear whether it was already run by the PR author and its result.
+
+Be specific in your test description: include role (admin vs. non-admin), device, OS, or firmware target where relevant.
 Check off each step as you confirm it locally before requesting review.
 
-Reviewers should then be able to follow this test plan to replicate. 
+Reviewers should be able to follow this test plan to replicate success and validate any edge cases.
 If the QMS 6.5.k Test plan contains tests that sufficiently cover the changes, it should be referenced here.
 
 Example 1:

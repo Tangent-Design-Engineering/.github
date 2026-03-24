@@ -168,7 +168,6 @@ Guidelines:
 ### Before you open
 
 - [ ] Work has been committed and pushed regularly throughout development
-- [ ] Branch is up to date with `main` (`git fetch && git rebase origin/main`)
 - [ ] All relevant tests pass locally
 - [ ] No unresolved merge conflicts
 
