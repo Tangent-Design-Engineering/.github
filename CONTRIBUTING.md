@@ -298,7 +298,7 @@ All releases use semantic versioning: `Major.Minor.Patch`
 | **Minor** | New features added in a backwards-compatible way                                                   |
 | **Patch** | Backwards-compatible bug fixes only                                                                |
 
-Internal working copies append a **Build** number: `Major.Minor.Patch.Build` (e.g. `1.2.1.16`). The build number is 
+Internal working copies append a **Build** number: `Major.Minor.Patch.Build` (e.g. `1.2.1.16` or 1.2.1-rc16). The build number is 
 removed on formal release - `1.2.1.16` becomes `1.2.2` (or whichever increment is appropriate for the changes).
 
 Binary image naming follows the same convention using component ID `91` for compiled source:
